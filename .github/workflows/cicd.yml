@@ -20,7 +20,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name :Build SpringBoot Server
+      - name: Build SpringBoot Server
         run: |
           chmod 700 ./mvnw
           ./mvnw clean package -Dtestskip\
