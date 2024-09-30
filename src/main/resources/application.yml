@@ -33,7 +33,6 @@ spring:
   config:
     activate:
       on-profile: green_server
-
 server:
   port: 9090
 client:
@@ -46,4 +45,4 @@ spring:
       on-profile: common
 mybatis:
   mapper-locations:
-    -mappers/*.xml
+    - mappers/*.xml

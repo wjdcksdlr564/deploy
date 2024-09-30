@@ -1,4 +1,4 @@
-package controller;
+package com.study.deploy_back.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,6 @@ public class TestController {
     @Value("${client.address}")
     private String clientAddress;
 
-    @CrossOrigin(originPatterns = "*")
     @GetMapping("/test")
     public ResponseEntity<?> test() {
         return ResponseEntity.ok(clientAddress + "테스트!!");
